@@ -1,0 +1,37 @@
+16/02/2025
+
+angular : javascript framework
+react : it is javascript library it can use both js and typescript as language
+
+s/w prequisite
+-node.js
+-npm
+-editor
+
+there are two ways to create react
+
+1. npx : there is no need to install configuration file. These are the files which support us to create the react project
+   commands :
+   Step 1: -npx create-react-app-appname
+   Step 2: -cd appname
+   Step 3: -npm start
+2. npm : In this first we have to install configuration file.
+   Step 1: -npm i -g create-react-app
+   Step 2 :-create-react-app appname
+   Step 2: -cd appname
+   Step 3: -npm start
+
+-all external & required libraries we download are found in node_modules.it;s installations are done here.
+-libraries and dependies we install are found in package.json
+
+-how do you display the an individual component's output by using that component's selector as a tag.
+
+In react,there are two types of components
+1.Function component
+2.Class component
+
+// to create a arrow function this is the syntax
+const FunctionComp = () => { }
+
+//to create a normal function the syntax is
+function FunctionComp(){}s
