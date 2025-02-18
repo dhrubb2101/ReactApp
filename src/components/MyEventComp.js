@@ -13,7 +13,7 @@ const MyEventComp = () => { //we use const so as to not a create a duplicate com
     return(<div>
         <h2>This is my Event component</h2>
         <button type="button" onClick={()=>greet()}>Call Greet Method</button>
-        <h2 onMouseOver={()=>welcome("Opteamix","Pooja")}>Hover on me</h2>
+        <h2 onMouseOver={()=>welcome("Opteamix","Pooja")}>Hover on me, A pop-up will appear</h2>
         </div>)
         
 }
