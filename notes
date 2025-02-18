@@ -96,4 +96,48 @@ Note: while creating component it's file name must start with capital letters
 <FunctionComp/>>
 <ClassComp/>
 
--
+-What is JSX
+it is a combination of javascript and xml : it makes react code easy to write as well as it allows us to write HTML code in react component
+In jsx In component to wrap multiple element we have to use one parent element it must be your block element and not an inline element like use div it's a block element.
+It can be h1-h6 elements they're also block elements.
+
+Props :
+Props is used to pass data inside component and props
+-it return us object type of data
+-we write props in starting tag of component in key and value pair format
+-we can access props in class component by writing this.props.propsName
+
+-this is the destructuring of props in function component
+
+-const {empName,post} =props; //destructuring of props
+return( <div>
+
+<h2>This is function component</h2>
+{/_ <p>My name is <strong>{props.empName},</strong> I am a <strong>{props.post}</strong></p> _/}
+<p>My name is <strong>{empName},</strong> I am a <strong>{post}</strong></p>
+</div>)
+
+--this is the destructuring of props in class component
+
+-const {empName,post} = this.props //destructuring of
+return (<div>
+
+<h2>This is a Class Component</h2>
+{/_ <p>My name is <strong>{this.props.empName},</strong> I am a <strong>{this.props.post}</strong></p> _/}
+<p>My name is <strong>{empName},</strong> I am a <strong>{post}</strong></p>
+</div>)
+
+--you can also do destructing of props in function component when defining the function like this :
+const FunctionComp = ({empName,post}) => {} //you directly define props you want to pass.
+instead of this
+const FunctionComp = (props) => {}
+
+\*Method and Event in React
+Method is nothing but a function in react,now you can implement that function in existing and new components.
+
+create a function component namely MyEventComp
+
+\*when we create a arrow function we don't use function keyword we use const instead of it.
+const MyEventComp () => {} //we use const so as to not a create a duplicate component like it and also we don't wanna change it's value at runtime.
+
+\*If you want to create a method in function component make sure that in a arrow function you have to create a arrow function only and not a normal function, a normal function won't execute

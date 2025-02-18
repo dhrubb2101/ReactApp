@@ -2,6 +2,7 @@
 import './App.css';
 import ClassComp from './components/ClassComp';
 import FunctionComp from './components/FunctionComp';
+import MyEventComp from './components/MyEventComp';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
         </a>
       </header> */}
       <h1>Welcome You All in React Sessions</h1>
-      <FunctionComp></FunctionComp>
-      <ClassComp></ClassComp>
+      <FunctionComp empName="Praveen" post="FullStack developer"/>
+      <ClassComp empName="Rajeev" post="MERN developer"/>
+      <MyEventComp />
     </div>
   );
 }
