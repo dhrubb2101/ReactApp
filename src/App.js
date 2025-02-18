@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import ClassComp from './components/ClassComp';
 import FunctionComp from './components/FunctionComp';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       </header> */}
       <h1>Welcome You All in React Sessions</h1>
       <FunctionComp></FunctionComp>
+      <ClassComp></ClassComp>
     </div>
   );
 }

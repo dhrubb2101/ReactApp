@@ -35,3 +35,65 @@ const FunctionComp = () => { }
 
 //to create a normal function the syntax is
 function FunctionComp(){}s
+
+==================================
+
+17/02/2025
+
+\*what is react
+-it is javascript library
+-angular is a javascript framework
+
+-what is the difference between library and framework
+Library:
+A library is a collection of reusable code that you can call upon to perform specific tasks.
+You control the flow of the application and decide when and how to use the library.
+Example: React (a library for building UI components).
+Framework:
+A framework provides a structure and set of rules for building an application.
+The framework is in control and calls your code at certain points.
+Example: Angular (a framework for building web applications).
+Key Difference:
+
+Who is in control?
+In a library, you call the library.
+In a framework, the framework calls you (Inversion of Control).
+
+Framework is like a dmart shop it has everything in a single building, you don't need to download anything from externally
+But library is like a kirana shop it serves specific needs doesn not have everything under one roof.
+
+\*what is the purpose of react library
+-it is used to create rich UI.
+-it is used to create single page application.
+
+React is more popular and used today than angular
+what is the difference between react and angular if both can do the same thing
+Parameter || Angular || React ||
+Language || Typescript,Html || XML,Javascript ||
+DataBinding || Two-way Databinding || One-way data-binding
+DOM || Real DOM || Virtual DOM
+Invention || Google || Facebook
+
+In XML, all elements must be closed even if it is paired or unpaired.
+you achieve two-way data binding in angular via ng model directory.
+In react there is only one-way data-binding.
+
+\*App is root component in react project
+component is a reusuable block code of the project or partial part of webapp
+it is a fundamental logical block which we can reuse in our whole project easily.
+we can reuse it multiple times.
+it can be any part of react app.
+
+In react,there are two types of components
+1.Function component - we use this component when your main focus is on UI design in that case we use function component
+2.Class component - we use this component when you need to deal with complex logic with design.
+
+Note: while creating component it's file name must start with capital letters
+-Function component may return a value class component never returns a value
+-we use render method in class component to return data.
+
+-we can close tags like this also instead of opening and closing tag.
+<FunctionComp/>>
+<ClassComp/>
+
+-
