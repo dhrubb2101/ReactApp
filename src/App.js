@@ -2,7 +2,13 @@
 import './App.css';
 import ClassComp from './components/ClassComp';
 import FunctionComp from './components/FunctionComp';
+import MyCounterComp from './components/MyCounterComp';
+import MyCSSComp from './components/MyCSSComp';
 import MyEventComp from './components/MyEventComp';
+import MyEventTwoComp from './components/MyEventTwoComp';
+import MyInfoComp from './components/MyInfoComp';
+import MyStateComp from './components/MyStateComp';
+
 
 function App() {
   return (
@@ -22,9 +28,15 @@ function App() {
         </a>
       </header> */}
       <h1>Welcome You All in React Sessions</h1>
-      <FunctionComp empName="Praveen" post="FullStack developer"/>
+      {/* <FunctionComp empName="Praveen" post="FullStack developer"/>
       <ClassComp empName="Rajeev" post="MERN developer"/>
-      <MyEventComp />
+      <MyEventComp /> */}
+      {/* <MyEventTwoComp/> */}
+      {/* <MyStateComp/> */}
+      {/* <MyInfoComp empName="Dhrubb" post="MERN developer" company ="xAI" address="Noida" contact="nada" gender="male"/>
+      <MyCounterComp/> */}
+      <MyCSSComp />
+      
     </div>
   );
 }

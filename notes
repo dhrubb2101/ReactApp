@@ -141,3 +141,43 @@ create a function component namely MyEventComp
 const MyEventComp () => {} //we use const so as to not a create a duplicate component like it and also we don't wanna change it's value at runtime.
 
 \*If you want to create a method in function component make sure that in a arrow function you have to create a arrow function only and not a normal function, a normal function won't execute
+
+\*MyEventTwoComp(class component)
+
+--in class component when defining a function you cannot use const keyword
+--in function component we can use it.
+
+\*State :
+
+- it is used to handle essential data in class component.
+  -it returns object type of data
+  -in class component we write state in constructor.
+  \*By using hooks we can use state now in function component before react version 16 it was not possible to use state in function components
+  we can access state data by writing this state.propertyname
+
+Create a class component namely MyStateComp
+
+State is used to store data
+
+\*super method represents your parent class constructor
+
+\*how to change state data
+we use a method namely
+setState : to update or change the state data in class component for setState method is used.
+
+\*Create a class component MyInfoComp and pass props name,post,company,address, and contact and gender and display it on browser.
+\*Create a class component MyCounterComp having state with count property and display it's value and you have to create three buttons which will incrememnt , decrement and reset counter value and display it's value.
+
+\*we use props to pass that data inside your component from outide and with the help of state you can manipulate the data inside your component.
+\*if you want to access state data outside your state you use this.state.propertyname
+
+=====================================================================================
+
+21/02/2025
+
+\*how to css within your react component
+1.Internal CSS: In normal html in the starting tag we use style attribute and with it we use properties and values.
+2.External CSS:
+3.Module CSS:
+
+\*Create a component with name MyCSSComp
