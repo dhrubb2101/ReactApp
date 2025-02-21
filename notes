@@ -176,8 +176,10 @@ setState : to update or change the state data in class component for setState me
 21/02/2025
 
 \*how to css within your react component
-1.Internal CSS: In normal html in the starting tag we use style attribute and with it we use properties and values.
-2.External CSS:
-3.Module CSS:
+1.Internal CSS: In normal html in the starting tag we use style attribute and with it we use and write properties and values.
+2.External CSS: In this we create a separate css file and import in componenet.
+3.Module CSS: when we have css property for particular component in that case we use it. we can create module css file by writing filename.module.css
 
 \*Create a component with name MyCSSComp
+
+\*Create a CSS file named MyCSS.css
