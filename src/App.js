@@ -8,7 +8,7 @@ import MyEventComp from './components/MyEventComp';
 import MyEventTwoComp from './components/MyEventTwoComp';
 import MyInfoComp from './components/MyInfoComp';
 import MyStateComp from './components/MyStateComp';
-
+import MyImagesComp from './components/MyImagesComp';
 
 function App() {
   return (
@@ -28,17 +28,16 @@ function App() {
         </a>
       </header> */}
       <h1>Welcome You All in React Sessions</h1>
-      {/* <FunctionComp empName="Praveen" post="FullStack developer"/>
-      <ClassComp empName="Rajeev" post="MERN developer"/>
-      <MyEventComp /> */}
+      {/* <FunctionComp empName="Praveen" post="FullStack developer"/> */}
+      {/* <ClassComp empName="Rajeev" post="MERN developer"/> */}
+      {/* <MyEventComp /> */}
       {/* <MyEventTwoComp/> */}
       {/* <MyStateComp/> */}
-      {/* <MyInfoComp empName="Dhrubb" post="MERN developer" company ="xAI" address="Noida" contact="nada" gender="male"/>
-      <MyCounterComp/> */}
+      {/* <MyInfoComp empName="Dhrubb" post="MERN developer" company ="xAI" address="Noida" contact="nada" gender="male"/> */}
+      {/* <MyCounterComp/> */}
       <MyCSSComp />
-      
-    </div>
-  );
+      <MyImagesComp/>
+    </div>);
 }
 
 export default App;

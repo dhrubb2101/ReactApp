@@ -183,3 +183,15 @@ setState : to update or change the state data in class component for setState me
 \*Create a component with name MyCSSComp
 
 \*Create a CSS file named MyCSS.css
+
+\*Create a class component with name MyImagesComp which will use images.
+
+in this component we are inserting images for that we are importing them via storing their image path individually in variables then using those variablees in img tag individually for their use in an individual component
+-this is not convenient cuz what if number of images are very high it'll just increase the lines of code.
+
+so Instead of this we can create a constant file where we'll import the all images and we'll import the constant file in all the required components which require imported images.
+
+*we just how to insert images and multimedia files
+*how to access constant fata
+
+create class component with ToggleImgCom, in this task you have to toggle image with its name when you click on single button
