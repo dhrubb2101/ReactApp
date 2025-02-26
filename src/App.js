@@ -9,8 +9,14 @@ import MyEventTwoComp from './components/MyEventTwoComp';
 import MyInfoComp from './components/MyInfoComp';
 import MyStateComp from './components/MyStateComp';
 import MyImagesComp from './components/MyImagesComp';
-
+import ConditionalRenComp from './components/ConditionalRenComp';
+import ParentComp from './components/ParentComp';
+import ToggleImgComp from './components/ToggleImgComp';
+import Trial from './components/trial';
+import RenderListComp from './components/RenderListComp';
 function App() {
+
+
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -35,8 +41,19 @@ function App() {
       {/* <MyStateComp/> */}
       {/* <MyInfoComp empName="Dhrubb" post="MERN developer" company ="xAI" address="Noida" contact="nada" gender="male"/> */}
       {/* <MyCounterComp/> */}
-      <MyCSSComp />
-      <MyImagesComp/>
+      {/* <MyCSSComp />
+      <MyImagesComp/> */}
+      {/* <ConditionalRenComp></ConditionalRenComp> */}
+      {/* <ParentComp/>
+      <ToggleImgComp/> */}
+      {/* <MultipleToggleImgComp/> */}
+      {/* <MultipleToggleImgComp /> */}
+      {/* <MultipleToggleImgComp/> */}
+
+      {/* <Trial/> */}
+      <RenderListComp/>
+
+        
     </div>);
 }
 

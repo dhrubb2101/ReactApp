@@ -194,4 +194,71 @@ so Instead of this we can create a constant file where we'll import the all imag
 *we just how to insert images and multimedia files
 *how to access constant fata
 
-create class component with ToggleImgCom, in this task you have to toggle image with its name when you click on single button
+Task 2: create class component with ToggleImgCom, in this task you have to toggle image with its name when you click on single button
+
+\*conditional rendering : display component output or view on the basis condition
+1.if else: if condition is true then if block will execute otherwise else part
+2.element as variable: In this we store data in a variable first and then we return that variable as an element.
+3.use of ternary operator:It is a shorthand syntax for if/Else means sometime you want to display data or you want to check condition in a single line we use ternary operator.
+Syntax: first check the condition and if the condition is true , the truepart will execute otherwise falsepart will execute.
+Syntax : (conditon) ? truepart : falsepart;
+4.short-circuit(&&): it will display element or component output only if condition is true.
+//we use this for null checking purpose - that is when we fetch data from server and the data is not there in your variable so it won't render your DOM element and if there is data in your variable then you display it.
+
+//basically in short-circuit data is not displayed if the condition is false it'll only get displayed if the if condition is true that's only when your DOM element gets rendered.
+
+Create a class component ConditionalRenComp
+
+\*use of extension for creating component in react
+
+\*there's code snippet for boilerplate code for class and functional component:
+type rce
+rce (reactclasscomponentexport)
+
+and by typing rconst inside you can generate boilerplate code for constructor with super method and state
+so type rconst and press enter
+
+\*There's a code snippet for boilerplate code for function component as well
+we type in rfce
+
+\*There's a code snippet for boilerplate code for arrow function component as well
+we type in rafce
+
+\*Component Interaction
+
+Create Two component one with the name ParentComp it will be a class component
+and ChildComp it will be a function component and you have to display the output of your parent component.
+
+\*use extension for creating react component in react
+rce: it will generate class component structure
+rconst: it will generate class component structure
+rfce: it will generate normal function component
+rafce: it will generate arrow funtion component
+
+if you want to build or create parent-child relation in betwenn components for this you have to import child component in parent component and write it's name as a tag in parent component.
+
+\*make sure that whenever you're using methodname or variable in a class component you don't const or let keywords in function component we can do that.
+
+\*props is basically used to pass data inside a component whether it is a chid component or parent component.
+
+\*Create one more component with the name MyPureComp a class component.
+
+\*whenever there is new data in class component the render method it gets executed automatically
+
+\*Pure Components: It is a react component which prevent unnecessary re-rendering of class components.
+-by performing shallow comparision it checks data if it is same then it prevent components to re-render
+-to achieve this we have to extend class component with pure components
+\*React.memo():It is a react method which prevent unnecessary re-rendering of function components.
+-by performing shallow comparision it checks data if it is same then it prevent components to re-render.
+-to achieve this you have to pass component name as an argument to react.memo() method.
+
+\*how to avoid unnecessary re-rendering of child class components.
+
+\*how to use bootstrap in react project.
+
+Step 1: install bootstrap
+npm i bootstrap
+Step 2: import bootstrap path in index.js file
+
+\*render array of object data in class component.
+RenderListComp(cc) create a class component.

@@ -13,6 +13,7 @@ class MyImagesComp extends Component {
             <video src={staticdata.boat} controls></video>
             <audio src={staticdata.ado} controls></audio>
             <img src={staticdata.samosa6} alt="prabhas" height="200px" width="200px"/>
+            
 
         </div>)
     }

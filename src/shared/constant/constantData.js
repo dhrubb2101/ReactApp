@@ -10,6 +10,13 @@ import samosa3 from '../images/prabhas.jpg'
 import samosa4 from '../images/rajnikanth.jpg'
 import samosa5 from '../images/salman.jpg'
 import samosa6 from '../images/samosa image.jpeg'
+import samosa7 from '../images/disha patani.jpeg'
+import samosa8 from '../images/Doraemon.png'
+import samosa9 from '../images/modi.jpg'
+import samosa10 from '../images/msdhoni.jpeg'
+import samosa11 from '../images/samay.jpg'
+import samosa12 from '../images/shinchan.jpg'
+import samosa13 from '../images/blake.webp'
 import boat from '../images/boat.mp4'
 import ado from '../images/ado.mp3'
 
@@ -19,7 +26,7 @@ import ado from '../images/ado.mp3'
 
 
 const staticdata ={
-    ado,bigImg,dosa,facebook,insta,samosa1,samosa2,samosa3,samosa4,samosa5,samosa6,jalebi,boat,page
+    ado,bigImg,dosa,facebook,insta,samosa1,samosa2,samosa3,samosa4,samosa5,samosa6,jalebi,boat,page,samosa7,samosa8,samosa9,samosa10,samosa11,samosa12,samosa13
 }
 
 export default staticdata;
