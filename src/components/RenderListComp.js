@@ -26,7 +26,7 @@ class RenderListComp extends Component {
     }
     
     render() {
-        const {breakfast} = this.state;
+        const {breakfast,employee} = this.state;
         return (
             <div>
                 <h2>this is rendering list component</h2>
@@ -37,6 +37,28 @@ class RenderListComp extends Component {
                      return <li key={index}>{val.name}</li>
                     })}                 
                 </ul>
+                <hr/>
+
+            <table className='table table-hover table-striped table-bordered'>
+                <thead>
+                    <tr>
+                        <th>Sr No.</th><th>Name</th><th>Post</th><th>Salary</th><th>Gender</th><th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {employee.length>0 && employee.map((val,index)=>{
+                        return <tr key={(val.id)}>
+                            <td>{index+1}</td>
+                            <td>{val.name}</td>
+                            <td>{val.post}</td>
+                            <td>{val.salary}</td>
+                            <td>{val.gender}</td>
+                            <td>{val.address}</td>
+                        </tr>
+
+                    })}
+                </tbody>
+            </table>
             </div>
         )
     }

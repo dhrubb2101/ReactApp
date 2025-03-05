@@ -262,3 +262,34 @@ Step 2: import bootstrap path in index.js file
 
 \*render array of object data in class component.
 RenderListComp(cc) create a class component.
+
+\*Virtual DOM concept: React is faster than angular due to this reason
+whenever you are going to perform
+
+\*angular performs manipulation with your browser DOM It's a real DOM so it's gonna take time to process and React creates same copy of browser DOM and all elements are gonna be present there
+and it is created in memeory and it is known as virtual DOM and it works much faster than real DOM and if you change a single DOM only that particular will get rendered again others will stay same in react in virtual DOM ( that is other part of components will not get rendered just the part where you made the update)
+
+Create a class component named ClickCounter(cc)
+Create a class component named HoverCounter(cc)
+it has a state with property count . Write a method where it will increment the counter value by 1 when you click on the button.
+it has a state with property count . Write a method where it will increment the counter value by 1 when you hover your mouse on it.
+
+HOC (Higher Order Component) : It is a technique which is used to share common business logic with multple components in the project
+In HOC we share data or logic from function to class component. Here we pass data through props
+
+Create HOC function component and display it's output and create class component within it.
+
+Render props:
+Render props is a design pattern in React that lets you share code between components by using a prop whose value is a function. Instead of hardcoding the UI, a component that uses render props delegates the rendering logic to the function provided as a prop. This pattern makes your components more flexible and reusable.
+
+How Render Props Work
+Component with State/Logic:
+A component (for example, a Counter component) manages state or contains logic. Instead of rendering its own UI, it calls a function (passed as a prop) to determine what should be rendered.
+
+Render Prop Function:
+The render prop function receives relevant data (like state values or methods) as arguments and returns the UI to display.
+
+Reusability:
+Multiple components can use the same render prop component by providing different render functions, resulting in different UIs while reusing the same logic.
+
+\*we're now going to learn form validation in react

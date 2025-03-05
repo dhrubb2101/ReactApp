@@ -14,6 +14,8 @@ import ParentComp from './components/ParentComp';
 import ToggleImgComp from './components/ToggleImgComp';
 import Trial from './components/trial';
 import RenderListComp from './components/RenderListComp';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 function App() {
 
 
@@ -52,6 +54,8 @@ function App() {
 
       {/* <Trial/> */}
       <RenderListComp/>
+      <ClickCounter/>
+      <HoverCounter/>
 
         
     </div>);
