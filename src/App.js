@@ -16,6 +16,8 @@ import Trial from './components/trial';
 import RenderListComp from './components/RenderListComp';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import UseStateHookComp from './Hooks/UseStateHookComp';
+import FormValComp from './components/FormValComp';
 function App() {
 
 
@@ -53,10 +55,11 @@ function App() {
       {/* <MultipleToggleImgComp/> */}
 
       {/* <Trial/> */}
-      <RenderListComp/>
-      <ClickCounter/>
-      <HoverCounter/>
-
+      {/* <RenderListComp/> */}
+      {/* <ClickCounter/> */}
+      {/* <HoverCounter/> */}
+      {/* <UseStateHookComp/> */}
+      <FormValComp/>
         
     </div>);
 }

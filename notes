@@ -292,4 +292,103 @@ The render prop function receives relevant data (like state values or methods) a
 Reusability:
 Multiple components can use the same render prop component by providing different render functions, resulting in different UIs while reusing the same logic.
 
-\*we're now going to learn form validation in react
+\*Hooks in React:
+-it allows us to use class component feature in function component.
+-it allows us to use state in function component
+-from react version-16 hooks intriduces in it.
+-from using hooks in function component first we have to import it from react library.
+
+React Hooks are functions that allow you to use state, lifecycle methods, and other React features in functional components—eliminating the need for class components in many cases.
+
+Key Points:
+Introduction to Hooks:
+
+Introduced in React 16.8.
+Allow functional components to manage state and side effects.
+Promote cleaner and more modular code.
+Common Hooks:
+
+useState:
+Manages state within a functional component.
+
+Built-in React Hooks
+Hooks let you use different React features from your components. You can either use the built-in Hooks or combine them to build your own. This page lists all built-in Hooks in React.
+
+State Hooks
+State lets a component “remember” information like user input. For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index.
+
+To add state to a component, use one of these Hooks:
+
+useState declares a state variable that you can update directly.
+useReducer declares a state variable with the update logic inside a reducer function.
+function ImageGallery() {
+const [index, setIndex] = useState(0);
+// ...
+Context Hooks
+Context lets a component receive information from distant parents without passing it as props. For example, your app’s top-level component can pass the current UI theme to all components below, no matter how deep.
+
+useContext reads and subscribes to a context.
+function Button() {
+const theme = useContext(ThemeContext);
+// ...
+
+\*Rules for Hooks
+-React Hook will work only with function components.
+-React hooks can not be conditionally rendered.
+-React hooks always used in top level component.
+
+When using hooks, it's important to follow these rules to ensure consistent behavior:
+
+Only Call Hooks at the Top Level:
+
+Do not call hooks inside loops, conditions, or nested functions.
+This ensures hooks are called in the same order on every render.
+Only Call Hooks from React Functions:
+
+Hooks should only be called from functional components or custom hooks—not regular JavaScript functions.
+
+\*In React there are 7 hooks
+
+React provides several built-in hooks that allow you to manage state, side effects, context, and more in functional components. Here are some of the key hooks:
+
+useState:
+Use & Manages state within a functional component.
+
+useEffect:
+Handles side effects such as data fetching, subscriptions, or manual DOM manipulations.
+
+useContext:
+Allows you to access context values without having to wrap your component tree in a Consumer.
+
+useReducer:
+An alternative to useState for managing more complex state logic with a reducer function.
+
+\*useRef:
+Provides a way to persist values between renders and directly access DOM elements.
+
+useMemo:
+Memoizes a computed value so that it is only recalculated when its dependencies change, helping to optimize performance.
+
+useCallback:
+Returns a memoized version of a callback function that only changes if one of its dependencies has changed.
+
+\*useLayoutEffect:
+Similar to useEffect, but it fires synchronously after all DOM mutations. It’s useful for reading layout from the DOM and synchronously re-rendering.
+
+\*useImperativeHandle:
+Customizes the instance value that is exposed when using ref in parent components, typically used with forwardRef.
+
+\*useDebugValue:
+Used to display a label for custom hooks in React DevTools, helping with debugging.
+
+These hooks cover a wide range of use cases—from simple state management to more advanced performance optimizations and direct DOM access. Additionally, you can create custom hooks to encapsulate and reuse stateful logic across different components.
+
+For all \* marked won't be covered here look on your own.
+
+--useState Hook:
+If you want to use state in function component for this we use it.
+-before using it,first we have to import it from react library
+-it returns two values first parameters will be your current state and second parameter will be method or function to update your current state.
+-in useState hook we can pass all type of data it can be number,array,object,boolean
+
+\*form validation in react - check to see if entered data is correct or not.
