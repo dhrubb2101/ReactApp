@@ -18,6 +18,8 @@ import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import UseStateHookComp from './Hooks/UseStateHookComp';
 import FormValComp from './components/FormValComp';
+import LifeCycleMethodComp from './components/LifeCycleMethodComp';
+import UserComp from './components/UserComp';
 function App() {
 
 
@@ -59,7 +61,12 @@ function App() {
       {/* <ClickCounter/> */}
       {/* <HoverCounter/> */}
       {/* <UseStateHookComp/> */}
-      <FormValComp/>
+      {/* <FormValComp/> */}
+      {/* <LifeCycleMethodComp color="green"/> */}
+      <UserComp user="Rahul"/>
+      <UserComp user="Aditya"/>
+      <UserComp user="Aadesh"/>
+      <UserComp user="Pulkit"/>
         
     </div>);
 }
