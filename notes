@@ -425,3 +425,22 @@ shouldComponentUpdate:this method decides whether component should get updated o
 LifeCycleMthodComp create a class component.
 
 Create a component UserComp a class component.
+
+\*Now to handle error in your application level or while rendering your component for that Error Boundary concept is there.
+Error Boundary : It is a react component which catches the error while rendering components.
+When you are rendering your component at that time whatever error is occuring only that we can handle using error boundary.
+-If there are logical or syntax error we can handle that by using try/catch block error etc.
+-In this we put all components inside one parent component and this parent component will be error boundary component
+-while writing logic for error boundary your component only must be class component.
+-To handle this or implement error boundary concept we use two lifecycle method in it : 1. getDerivedStateFromError and componentDidCatch (these are class component lifecycle method, that means they will execute in class component only)
+-getDerivedStateFromError : it gets ececuted automatically when error occurs in component.
+-componentDidCatch : it Will return error log that is error information.
+-For function components instead of lifecycle method use hooks to perform the same operations.
+
+Create a component ErrorBoundaryComp a class component
+
+\*Material UI - It's a library which provides inbuilt components as well it provides the icons also.
+
+npm install @mui/material @emotion/react @emotion/styled
+for icons
+npm install @mui/icons-material

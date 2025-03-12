@@ -20,6 +20,7 @@ import UseStateHookComp from './Hooks/UseStateHookComp';
 import FormValComp from './components/FormValComp';
 import LifeCycleMethodComp from './components/LifeCycleMethodComp';
 import UserComp from './components/UserComp';
+import ErrorBoundaryComp from './components/ErrorBoundaryComp';
 function App() {
 
 
@@ -42,7 +43,7 @@ function App() {
       <h1>Welcome You All in React Sessions</h1>
       {/* <FunctionComp empName="Praveen" post="FullStack developer"/> */}
       {/* <ClassComp empName="Rajeev" post="MERN developer"/> */}
-      {/* <MyEventComp /> */}
+      <MyEventComp />
       {/* <MyEventTwoComp/> */}
       {/* <MyStateComp/> */}
       {/* <MyInfoComp empName="Dhrubb" post="MERN developer" company ="xAI" address="Noida" contact="nada" gender="male"/> */}
@@ -63,10 +64,19 @@ function App() {
       {/* <UseStateHookComp/> */}
       {/* <FormValComp/> */}
       {/* <LifeCycleMethodComp color="green"/> */}
+      {/* <ErrorBoundaryComp>
       <UserComp user="Rahul"/>
+      </ErrorBoundaryComp>
+      <ErrorBoundaryComp>
       <UserComp user="Aditya"/>
+      </ErrorBoundaryComp>
+      <ErrorBoundaryComp>
       <UserComp user="Aadesh"/>
+      </ErrorBoundaryComp>
+      <ErrorBoundaryComp>
       <UserComp user="Pulkit"/>
+      </ErrorBoundaryComp> */}
+      {/* <ErrorBoundaryComp/> */}
         
     </div>);
 }
