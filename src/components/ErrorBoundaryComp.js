@@ -15,6 +15,12 @@ class ErrorBoundaryComp extends Component {
         }
 
     }
+
+    componentDidCatch(error,errorInfo){
+        console.log("Error Caught by Error Boundary:",error)
+        // console.error()
+
+    }
     
     render() {
         const {isError} = this.state;

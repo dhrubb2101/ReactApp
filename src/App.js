@@ -40,10 +40,10 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <h1>Welcome You All in React Sessions</h1>
+      {/* <h1>Welcome You All in React Sessions</h1> */}
       {/* <FunctionComp empName="Praveen" post="FullStack developer"/> */}
       {/* <ClassComp empName="Rajeev" post="MERN developer"/> */}
-      <MyEventComp />
+      {/* <MyEventComp /> */}
       {/* <MyEventTwoComp/> */}
       {/* <MyStateComp/> */}
       {/* <MyInfoComp empName="Dhrubb" post="MERN developer" company ="xAI" address="Noida" contact="nada" gender="male"/> */}

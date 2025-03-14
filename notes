@@ -440,7 +440,31 @@ When you are rendering your component at that time whatever error is occuring on
 Create a component ErrorBoundaryComp a class component
 
 \*Material UI - It's a library which provides inbuilt components as well it provides the icons also.
+\*Material Icons
 
 npm install @mui/material @emotion/react @emotion/styled
 for icons
 npm install @mui/icons-material
+
+=====================================================================
+Routing: navigation of components
+-display component output by writing it's routing path in browser url.
+-TO perform routing we have to install react-router-dom library.
+-to display routing component output we have to write <Outlet/>
+
+Command to install this react-router-dom library
+-npm i react-router-dom
+
+-create following
+--src folder
+---layout folder
+----MainDashboardComp function component
+----NavCom function component
+----FooterComp function component
+----PageNotFound function component
+---Routing Folder
+----routing.js normal js file
+
+Hooks Folder
+ReactHooksComp create a function component
+Create a component with name UseEffectHookComp create a function component.
