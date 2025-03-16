@@ -11,6 +11,8 @@ import FormValComp from "../components/FormValComp";
 import ReactHooksComp from "../Hooks/ReactHooksComp";
 import UseEffectHookComp from "../Hooks/UseEffectHookComp";
 import UseStateHookComp from "../Hooks/UseStateHookComp";
+import ProductAddComp from "../CRUD/ProductAddComp";
+import ProductDashComp from "../CRUD/ProductDashComp";
 
 const router = createBrowserRouter([
     
@@ -27,6 +29,8 @@ const router = createBrowserRouter([
         {path:"images",element:<MyImagesComp/>},
         {path:"event",element:<MyEventComp/>},
         {path:"form",element:<FormValComp/>},
+        // {path:"productadd",element:<ProductAddComp/>},
+        {path:"productdash",element:<ProductDashComp/>},
         {path:"reacthooks",element:<ReactHooksComp/>,children:[
             {path:"usestate",element:<UseStateHookComp></UseStateHookComp>},
             {path:"useeffect",element:<UseEffectHookComp></UseEffectHookComp>},

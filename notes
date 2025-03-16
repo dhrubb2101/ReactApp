@@ -468,3 +468,64 @@ Command to install this react-router-dom library
 Hooks Folder
 ReactHooksComp create a function component
 Create a component with name UseEffectHookComp create a function component.
+
+\*React.fragment : It si alternative for jsx
+-It does not show unnecessary element in browser dom hierarchy
+
+\*The useEffect hook is one of the most important hooks in React that lets you perform side effects in function components. Here’s an in-depth look at what it is and how it works:
+
+What Are Side Effects?
+Side effects refer to any operations that affect something outside the scope of the function being executed. Common examples include:
+
+Data Fetching: Making HTTP requests to fetch data.
+Subscriptions: Subscribing to events or data streams.
+Manual DOM Manipulation: Interacting directly with the DOM.
+Timers: Using setTimeout or setInterval.
+In class components, these were often handled in lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount. With function components, useEffect consolidates this behavior.
+
+Case1: when no dependency pass
+useEffect(()=>{}) //it will execute after every render or return method.
+
+Case2: when we pass dependecy as blank array
+useEffect(()=>{},[]) //it will execute only once after render or return method.
+
+Case3: when we pass value as dependency
+useEffect(()=>{},[state or props]) //it will execute only once after render or return method.
+
+Effect Callback: The function you pass to useEffect will run after the render is committed to the screen.
+Cleanup Function: If your effect creates a resource that needs to be cleaned up (like a subscription or timer), you can return a function. This function will run before the effect is re-executed or when the component unmounts.
+Dependency Array: This array tells React when to re-run the effect. If the array is empty ([]), the effect runs only once after the initial render (similar to componentDidMount). If you include variables (dependencies), the effect will re-run whenever those variables change.
+
+Create function components
+
+ProductDashComp
+ProductAddComp
+ProductEditComp
+
+\*Axios
+When using Axios in React, you can take advantage of React’s hooks—especially useEffect and useState—to fetch and update data as components mount or update. Here’s an in-depth explanation and example:
+
+How Axios Fits Into React
+Data Fetching in Functional Components:
+
+useEffect: Use this hook to trigger data fetching after the component renders. The dependency array lets you control when the request should be made.
+useState: Manage the fetched data and loading/error states.
+Promise-based Requests:
+
+Axios returns promises, which work well with async/await inside useEffect to handle asynchronous code.
+Error Handling and Cleanup:
+
+Catch errors to update your state or trigger user notifications.
+Optionally, cancel ongoing requests if the component unmounts (using Axios Cancel Tokens) to avoid updating state on an unmounted component.
+
+*Created Json Database successfully
+*How to start json server with database.
+cd/src/shared/database
+json-server --watch -p 8888 db.json
+
+In Package.json
+"json-server":cd src/shared/database && json-server --watch -p 8888 db.json",
+"start-dev": "concurrently \"npm start\" \"npm run json-server\"",
+
+restart server with command
+npm run start-dev
