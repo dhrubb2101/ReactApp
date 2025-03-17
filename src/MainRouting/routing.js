@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         ]},
         {path:"useeffect",element:<UseEffectHookComp/>},
          //parameterized routing
-        {path:"classcomp/:id",element:<ClassComp></ClassComp>},
+         {path:"classcomp/:id",element:<ClassComp></ClassComp>},
 
     ]},
 
