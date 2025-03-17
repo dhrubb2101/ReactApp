@@ -1,18 +1,69 @@
 {
-    "products":[
-        {"id":1,"name":"Laptop","price":58000,"company":"hp"},
-        {"id":2,"name":"Mouse","price":20000,"company":"iball"},
-        {"id":3,"name":"keyboard","price":500,"company":"Toshiba"},
-        {"id":4,"name":"USB","price":10000,"company":"Sony"},
-        {"id":5,"name":"Adaptor","price":3000,"company":"Macro"},
-        {"id":6,"name":"MICE","price":2000,"company":"Toshiba"},
-        {"id":7,"name":"HeadPhone","price":1000,"company":"hp"},
-        {"id":8,"name":"Cable","price":4500,"company":"Dell"}
-        
-    ],
-    "users":[
-        {"id":1,"uid":"admin@gmail.com","pass":"admin@123"},
-        {"id":2,"uid":"king@gmail.com","pass":"king@123"},
-        {"id":3,"uid":"hero@gmail.com","pass":"hero@123"}
-    ]
+  "products": [
+    {
+      "id": "2",
+      "name": "Mouse",
+      "price": 20000,
+      "company": "iball"
+    },
+    {
+      "id": "4",
+      "name": "USB",
+      "price": 10000,
+      "company": "Sony"
+    },
+    {
+      "id": "5",
+      "name": "Adaptor",
+      "price": 3000,
+      "company": "Macro"
+    },
+    {
+      "id": "6",
+      "name": "MICE",
+      "price": 2000,
+      "company": "Toshiba"
+    },
+    {
+      "id": "7",
+      "name": "HeadPhone",
+      "price": 1000,
+      "company": "hp"
+    },
+    {
+      "id": "8",
+      "name": "Cable",
+      "price": 4500,
+      "company": "Dell"
+    },
+    {
+      "id": "51da",
+      "name": "Batteries",
+      "price": "200",
+      "company": "Nippo"
+    },
+    {
+      "id": "3081",
+      "name": "Camera",
+      "price": "50000",
+      "company": "Nikon"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "uid": "admin@gmail.com",
+      "pass": "admin@123"
+    },
+    {
+      "id": "2",
+      "uid": "king@gmail.com",
+      "pass": "king@123"
+    },
+    {
+      "id": "3",
+      "uid": "hero@gmail.com",
+      "pass": "hero@123"
+    }
+  ]
 }

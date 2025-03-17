@@ -529,3 +529,22 @@ In Package.json
 
 restart server with command
 npm run start-dev
+
+*we successfully perform get request
+*we display array of object data in table
+\*we added three MUI icon in product dashboard
+\*we successfully perform delete request
+
+\*use of React Bootstrap
+https://react-bootstrap.github.io/docs/components/modal
+
+npm install react-bottstrap bootstrap
+
+==============================================
+
+*use of react-bootstrap modal group
+*we successfully perform post request
+
+==============================================
+
+\*how to update data (we use a put request)

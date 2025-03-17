@@ -13,6 +13,7 @@ import UseEffectHookComp from "../Hooks/UseEffectHookComp";
 import UseStateHookComp from "../Hooks/UseStateHookComp";
 import ProductAddComp from "../CRUD/ProductAddComp";
 import ProductDashComp from "../CRUD/ProductDashComp";
+import ProductEditComp from "../CRUD/ProductEditComp";
 
 const router = createBrowserRouter([
     
@@ -29,7 +30,8 @@ const router = createBrowserRouter([
         {path:"images",element:<MyImagesComp/>},
         {path:"event",element:<MyEventComp/>},
         {path:"form",element:<FormValComp/>},
-        // {path:"productadd",element:<ProductAddComp/>},
+        {path:"productadd",element:<ProductAddComp/>},
+        {path:"productedit/:id",element:<ProductEditComp/>},
         {path:"productdash",element:<ProductDashComp/>},
         {path:"reacthooks",element:<ReactHooksComp/>,children:[
             {path:"usestate",element:<UseStateHookComp></UseStateHookComp>},
