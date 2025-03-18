@@ -1,12 +1,6 @@
 {
   "products": [
     {
-      "id": "2",
-      "name": "Mouse",
-      "price": 20000,
-      "company": "iball"
-    },
-    {
       "id": "4",
       "name": "USB",
       "price": 10000,
@@ -38,15 +32,21 @@
     },
     {
       "id": "51da",
-      "name": "Batteries",
+      "name": "Batteries1234",
       "price": "200",
-      "company": "Nippo"
+      "company": "Nippo123"
     },
     {
       "id": "3081",
       "name": "Camera",
       "price": "50000",
       "company": "Nikon"
+    },
+    {
+      "id": "06e1",
+      "name": "Mouse",
+      "price": "100000",
+      "company": "DELL"
     }
   ],
   "users": [

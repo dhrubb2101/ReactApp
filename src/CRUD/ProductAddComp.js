@@ -35,7 +35,7 @@ const ProductAddComp = () => {
             <h2>This is ProductAddComp</h2>
             <div className='row'>
                 <div className='col-sm-3'></div>
-                <div className='col-sm-6'></div>
+                <div className='col-sm-6'>
 
                 <form onSubmit={addProduct}>
                 <input type='text' name='name' onChange={inputChangeHandler}  value={products.name} className='form-control' placeholder='Enter Product Name' ></input> <br/>
@@ -46,7 +46,7 @@ const ProductAddComp = () => {
 
             </div>
             <div className='col-sm-3'></div>
-            
+            </div>
             <Outlet/>
         </div>
     )
