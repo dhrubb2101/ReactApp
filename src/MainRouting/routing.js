@@ -14,6 +14,7 @@ import UseStateHookComp from "../Hooks/UseStateHookComp";
 import ProductAddComp from "../CRUD/ProductAddComp";
 import ProductDashComp from "../CRUD/ProductDashComp";
 import ProductEditComp from "../CRUD/ProductEditComp";
+import ProtectedRouteComp from "./ProtectedRouteComp";
 
 const router = createBrowserRouter([
     
@@ -24,7 +25,8 @@ const router = createBrowserRouter([
     {path:"login",element:<LoginComp></LoginComp>},
     
     //Child Routing
-    {path:"maindashboard",element:<MainDashboardComp></MainDashboardComp>,children:[
+    // {path:"maindashboard",element:<MainDashboardComp></MainDashboardComp>,children:[
+    {path:"maindashboard",element:<ProtectedRouteComp  Component={MainDashboardComp}/>,children:[
         {path:"",element:<MyImagesComp/>},
         {path:"parent",element:<ParentComp/>},
         {path:"images",element:<MyImagesComp/>},

@@ -2,9 +2,9 @@
   "products": [
     {
       "id": "4",
-      "name": "USB",
-      "price": 10000,
-      "company": "Sony"
+      "name": "Apple  mac",
+      "price": "900",
+      "company": "APPLE"
     },
     {
       "id": "5",

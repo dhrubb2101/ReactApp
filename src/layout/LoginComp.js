@@ -19,7 +19,9 @@ import ForgotPassword from '../layout/ForgotPassword';
 import { SitemarkIcon, GoogleIcon, FacebookIcon } from '../layout/CustomIcons';
 import ColorModeSelect from '../layout/ColorModeSelect';
 import AppTheme from '../layout/AppTheme';
+import { useState
 
+ } from 'react';
 const Card = styled(MuiCard)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
@@ -40,6 +42,8 @@ const Card = styled(MuiCard)(({ theme }) => ({
 }));
 
 const LoginComp = () => {
+  const nav = useNavigate();
+  const [users,setUsers] = useState([]);
   const navigate = useNavigate();
   const [emailError, setEmailError] = React.useState(false);
   const [emailErrorMessage, setEmailErrorMessage] = React.useState('');
@@ -78,17 +82,27 @@ const LoginComp = () => {
   
         axios.get('http://localhost:8888/users')
           .then((res) => {
-            const users = res.data;
-            const userFound = users.find((user) => user.uid === email && user.pass === password);
-            if (userFound) {
-              console.log('Login successful!', userFound);
-              navigate('/maindashboard');
-              // console.log('Login successful!', userFound);
-              // Add further actions upon successful login here (e.g., redirecting)
-            } else {
-              console.error('Invalid credentials');
-              // Optionally, update state to show an error message in the UI
+            console.log('Users fetched:', res.data);
+            setUsers(res.data)
+            const currentUser = users.filter((val) => val.uid === email && val.pass === password);
+            if(currentUser.length > 0){
+              sessionStorage.setItem("user",email);
+              nav("/maindashboard")
+            }else{
+              window.alert("wrong credential inserted.")
+              
             }
+            // const users = res.data;
+            // const userFound = users.find((user) => user.uid === email && user.pass === password);
+            // if (userFound) {
+            //   console.log('Login successful!', userFound);
+            //   navigate('/maindashboard');
+            //   // console.log('Login successful!', userFound);
+            //   // Add further actions upon successful login here (e.g., redirecting)
+            // } else {
+            //   console.error('Invalid credentials');
+            //   // Optionally, update state to show an error message in the UI
+            // }
           })
           .catch((error) => {
             console.error('Error fetching users:', error);

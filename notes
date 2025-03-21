@@ -548,3 +548,6 @@ npm install react-bottstrap bootstrap
 ==============================================
 
 \*how to update data (we use a put request)
+\*We perform put request succesfully.
+
+Create one function component with the name ProtectedRouteComp
