@@ -551,3 +551,7 @@ npm install react-bottstrap bootstrap
 \*We perform put request succesfully.
 
 Create one function component with the name ProtectedRouteComp
+
+===============================================
+
+task 1: you have to make sign out component

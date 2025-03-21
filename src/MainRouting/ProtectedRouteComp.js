@@ -16,7 +16,7 @@ const ProtectedRouteComp = ({Component}) => {
         <div>
             {/* <h2>This is the Protected Routing component</h2> */}
             <Component></Component>
-            <Outlet/>
+            {/* <Outlet/> */}
         </div>
     )
 }

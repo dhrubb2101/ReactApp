@@ -1,7 +1,21 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import LogoutIcon from '@mui/icons-material/Logout';
+
+
 
 const NavComp = () => {
+     const nav = useNavigate();
+        const handleSignOut = () => {
+            if(window.confirm("Are you sure you want to sign out?")){
+                sessionStorage.removeItem("user");
+                nav('/');
+
+
+            }
+        }
     return (
         // <React.Fragment className="txt">
         //    it removes unnecessary elemets like various div elements used in Code./Use it instead of div and put the entire code in it.
@@ -14,6 +28,8 @@ const NavComp = () => {
             <Link to="form" className='btn btn-primary btn-sm'>Form</Link>{" "}
             <Link to="reacthooks" className='btn btn-primary btn-sm'>Hooks</Link>{" "}
             <Link to="productdash" className='btn btn-warning btn-sm'>CRUD</Link>
+            <Button variant='outline' oclor='danger' onClick={()=>handleSignOut()} className='float-end'>
+                <LogoutIcon></LogoutIcon> SignOut</Button>
             
         </div>
     )
