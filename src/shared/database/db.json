@@ -20,9 +20,9 @@
     },
     {
       "id": "7",
-      "name": "HeadPhone",
-      "price": 1000,
-      "company": "hp"
+      "name": "Pasta",
+      "price": "100000",
+      "company": "Walmart"
     },
     {
       "id": "8",

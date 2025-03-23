@@ -555,3 +555,30 @@ Create one function component with the name ProtectedRouteComp
 ===============================================
 
 task 1: you have to make sign out component
+
+*here we implement sign out with session clear
+*Lazy Loading: When you create a big project it is a collection of module and each module contains multiple components
+Lazy Loading : Loading module on demand, that means when you click on it that module will load.
+-what happened previously was all the modules get imported automatically thus affecting the application and increasing the loading time.
+-we implement this in routing file.
+for this we use a syntax
+
+\*Hooks
+it is used for accessing and manipulating current state values
+
+\*useRef Hook:
+-It allows us to access DOM Node directly.
+-as well as it persists value even at render (that means the component's value remains fixed while the component is being rendered)
+-useRef hook return one object "current"
+
+==========================================================================
+
+\*UseContext Hook
+It is used to manage your state globally in a function component
+suppose you have a state in a specific component and you want to share it with multiple components
+-with useContext hook we use one more hook it's name is useState Hook
+-two steps to use useContext hook
+-1st Step : First we have create variable of createContext in our parent component or in the top level component.
+-2nd Step : We have to create paremt element of createContext variable
+
+Create a function compoennt UseContextHookComp

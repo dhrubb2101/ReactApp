@@ -5,7 +5,6 @@ import MyPureComp from './MyPureComp';
 class ParentComp extends Component {
     constructor(props) {
         super(props)
-    
         this.state = {
             empName:"Dhrubb",
             empSalary:850000

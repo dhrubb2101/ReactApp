@@ -82,9 +82,10 @@ const LoginComp = () => {
   
         axios.get('http://localhost:8888/users')
           .then((res) => {
-            console.log('Users fetched:', res.data);
-            setUsers(res.data)
-            const currentUser = users.filter((val) => val.uid === email && val.pass === password);
+            // console.log('Users fetched:', res.data);
+            // setUsers(res.data)
+            // const currentUser = users.filter((val) => val.uid === email && val.pass === password);
+            const currentUser = res.data.filter((val) => val.uid === email && val.pass === password);
             if(currentUser.length > 0){
               sessionStorage.setItem("user",email);
               nav("/maindashboard")
