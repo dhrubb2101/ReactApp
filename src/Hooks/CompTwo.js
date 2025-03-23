@@ -1,13 +1,15 @@
-import React from 'react'
-import CompThree from './CompThree'
+import React, { useContext } from 'react'
+import CompThree from './CompThree';
+import { UserContext } from './UseContextHookComp';
 
 const CompTwo = (props) => {
+    let user = useContext(UserContext);
     return (
         <div>
             <h3>This is This is Component Two</h3>            
-            <p>My Name is : <strong>{props.name}</strong></p>
+            <p>My Name is : <strong>{user}</strong></p>
             <hr/>
-            <CompThree name={props.name}></CompThree>
+            <CompThree></CompThree>
 
 
         </div>

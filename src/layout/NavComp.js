@@ -28,6 +28,7 @@ const NavComp = () => {
             <Link to="form" className='btn btn-primary btn-sm'>Form</Link>{" "}
             <Link to="reacthooks" className='btn btn-primary btn-sm'>Hooks</Link>{" "}
             <Link to="productdash" className='btn btn-warning btn-sm'>CRUD</Link>
+            <Link to="datalist" className='btn btn-warning btn-sm'>DataList</Link>
             <Button variant='outline' oclor='danger' onClick={()=>handleSignOut()} className='float-end'>
                 <LogoutIcon></LogoutIcon> SignOut</Button>
             

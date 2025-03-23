@@ -582,3 +582,46 @@ suppose you have a state in a specific component and you want to share it with m
 -2nd Step : We have to create paremt element of createContext variable
 
 Create a function compoennt UseContextHookComp
+
+in react app.js is the root component
+
+\*Redux :
+
+- is a javascript library
+  -it is predictable state container for all javascript app.
+  -Predictable state container means in which you are able to manage,store and track state(data) of javascript app.
+  -We use react to develop rich interfaces and it might have multiple components and sometimes you have to manage the same data in multiple components that is you want to access a state in say header also nav also, managing state and accessing multiple component is a tedious task that's why we use redux which is a separate libary in which we stores the state
+  -So suppose if any one of the components want data they can directly make a request to your redux.
+  -If they are multiple components wanting access to the state they request your redux individually
+  -if you want to manage state at global level we use redux because we can easily manage,keep track and store the state of javascrip app.
+
+\*react-redux library: it is use to connect react and redux library together
+s/w pre-requisite
+
+1.react project
+2.react toolkit
+
+To install redux
+commands are :
+
+npm install @reduxjs/toolkit
+npm install react-redux
+
+1.Action : It is simple statement which we are going to perform
+2.Reducer: It is use to perform state transition depending on action and store.
+3.Store : It is used to hold the state
+
+ReduxToolkit:
+
+These are the methods
+CreateAction(): It is use to create action in Redux toolkit.
+CreateReducer(): It is use to create action in Redux toolkit.
+ConfigureStore(): It is use to create action in Redux toolkit.
+
+-src folder
+--features Folder
+---Api Folder
+----apiSlice.js
+---Store Folder
+----store.js
+=========================================================================

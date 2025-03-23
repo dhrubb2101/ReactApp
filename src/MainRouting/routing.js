@@ -19,6 +19,7 @@ import UseStateHookComp from "../Hooks/UseStateHookComp";
 import ProtectedRouteComp from "./ProtectedRouteComp";
 import UseRefHookComp from "../Hooks/UseRefHookComp";
 import UseContextHookComp from "../Hooks/UseContextHookComp";
+import DataListComp from "../reduxData/DataListComp";
 //Lazy Loading done for ProductDash Component,ProductEdit Componennt,ProductAdd Component
 const ProductDashCompLazyLoad = lazy(() => import("../CRUD/ProductDashComp"));
 const ProductEditCompLazyLoad = lazy(() => import("../CRUD/ProductEditComp"));
@@ -42,6 +43,8 @@ const router = createBrowserRouter([
         {path:"images",element:<MyImagesComp/>},
         {path:"event",element:<MyEventComp/>},
         {path:"form",element:<FormValComp/>},
+        {path:"datalist",element:<DataListComp/>},
+
         // {path:"productadd",element:<ProductAddComp/>},
         // {path:"productedit/:id",element:<ProductEditComp/>},
         // {path:"productdash",element:<ProductDashComp/>},
