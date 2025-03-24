@@ -20,6 +20,7 @@ import ProtectedRouteComp from "./ProtectedRouteComp";
 import UseRefHookComp from "../Hooks/UseRefHookComp";
 import UseContextHookComp from "../Hooks/UseContextHookComp";
 import DataListComp from "../reduxData/DataListComp";
+import AddDataListComp from "../reduxData/AddDataListComp";
 //Lazy Loading done for ProductDash Component,ProductEdit Componennt,ProductAdd Component
 const ProductDashCompLazyLoad = lazy(() => import("../CRUD/ProductDashComp"));
 const ProductEditCompLazyLoad = lazy(() => import("../CRUD/ProductEditComp"));
@@ -44,6 +45,7 @@ const router = createBrowserRouter([
         {path:"event",element:<MyEventComp/>},
         {path:"form",element:<FormValComp/>},
         {path:"datalist",element:<DataListComp/>},
+        {path:"adddatalist",element:<AddDataListComp/>},
 
         // {path:"productadd",element:<ProductAddComp/>},
         // {path:"productedit/:id",element:<ProductEditComp/>},

@@ -625,3 +625,13 @@ ConfigureStore(): It is use to create action in Redux toolkit.
 ---Store Folder
 ----store.js
 =========================================================================
+
+\*If you want to access actions from redux to component for that we use one hook it's name is
+-useDispatch Hook -
+\*\*If you want to access store and in it state from redux to component for that we use one hook it's name is
+-useSelector Hook
+
+\*how you can perform action of redux after the function component is rendered.
+-we can use useEffect hook.
+
+=============================================================================

@@ -1,24 +1,6 @@
 {
   "products": [
     {
-      "id": "4",
-      "name": "Apple  mac",
-      "price": "900",
-      "company": "APPLE"
-    },
-    {
-      "id": "5",
-      "name": "Adaptor",
-      "price": 3000,
-      "company": "Macro"
-    },
-    {
-      "id": "6",
-      "name": "MICE",
-      "price": 2000,
-      "company": "Toshiba"
-    },
-    {
       "id": "7",
       "name": "Pasta",
       "price": "100000",
@@ -43,10 +25,10 @@
       "company": "Nikon"
     },
     {
-      "id": "06e1",
-      "name": "Mouse",
-      "price": "100000",
-      "company": "DELL"
+      "id": "bfb5",
+      "name": "Test",
+      "price": "Test",
+      "company": "Test"
     }
   ],
   "users": [
